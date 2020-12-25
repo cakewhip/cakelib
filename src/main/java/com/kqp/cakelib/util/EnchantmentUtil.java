@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 
 public class EnchantmentUtil {
 
-    private static int getLevel(
+    public static int getLevel(
         Optional<Enchantment> optionalEnchantment,
         ItemStack itemStack
     ) {
@@ -19,7 +19,7 @@ public class EnchantmentUtil {
             .orElse(0);
     }
 
-    private static int getMaxLevel(Optional<Enchantment> optionalEnchantment) {
+    public static int getMaxLevel(Optional<Enchantment> optionalEnchantment) {
         return optionalEnchantment
             .map(enchantment -> enchantment.getMaxLevel())
             .orElse(0);
