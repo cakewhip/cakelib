@@ -3,7 +3,7 @@
     "minVersion": "0.8",
     "package": "com.kqp.cakelib.mixin",
     "compatibilityLevel": "JAVA_8",
-    "mixins": ["TargetedEnchantmentMixin"],
+    "mixins": ["TargetedEnchantmentItemGroupMixin", "TargetedEnchantmentMixin"],
     "client": [],
     "injectors": {
         "defaultRequire": 1
